@@ -1,6 +1,3 @@
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
 import {PageTitle} from './../components/PageTitle'
 
 export default function Home() {
@@ -16,13 +13,13 @@ export default function Home() {
     <>
       <PageTitle title="Orange Store" tagline="featured products"/> 
         <ul>
-          {productsData.map(product=> <ListItem key={product} number={product}/>)}
+          {/* {productsData.map(product=> <ListItem key={product} number={product}/>)} */}
         </ul>
     </>
   )
 }
 
-function ListItem({number, key, props}){
+function ListItem({number, key, ...props}){
 
   return <li>{number}<span>{key}</span></li>
   

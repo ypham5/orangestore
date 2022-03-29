@@ -17,3 +17,5 @@ function PageTitle ({children, title, tagline, ...props}) {
   )
   
   }
+  
+export default PageTitle

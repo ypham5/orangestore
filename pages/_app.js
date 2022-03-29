@@ -1,27 +1,7 @@
-import React from 'react';
+import '../styles/globals.css'
 
-
-
-import styles from './styles.module.css'
-
-
-
-function PageTitle ({children, title, tagline, ...props}) {
-
-return (
-
-    <header>
-
-    <h1>{title || 'uiTitle'}</h1>
-
-    <p>{tagline || 'uiTagline'}</p>
-
-    </header>
-
-)
-
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
 
-
-
-export default PageTitle
+export default MyApp
